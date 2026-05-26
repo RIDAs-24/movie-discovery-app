@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowLeft, Star, Clock, Calendar, User, DollarSign,
-  Award, Film, Youtube, TrendingUp,
+  Award, Film, PlayCircle, TrendingUp,
 } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 import RatingComponent from "@/components/movies/RatingComponent";
@@ -205,7 +205,7 @@ export default function MovieDetailClient({ movie, tmdb }: Props) {
         {trailer && (
           <motion.div {...fade} transition={{ delay: 0.5 }} className="rounded-2xl bg-slate-900/80 border border-white/5 p-6">
             <h2 className="text-base font-bold text-white mb-4 flex items-center gap-2">
-              <Youtube className="w-4 h-4 text-rose-400" /> Trailer
+              <PlayCircle className="w-4 h-4 text-rose-400" /> Trailer
             </h2>
             <div className="relative rounded-xl overflow-hidden aspect-video max-w-2xl bg-slate-950">
               <iframe
